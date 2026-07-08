@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Penalty Kick — Interactive Graphics</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="scene"></canvas>
+
+  <!-- ===== START MENU ===== -->
+  <div id="menu">
+    <div class="menu-inner">
+      <div class="menu-logo">PENALTY<span>KICK</span></div>
+
+      <!-- Screen A: choose mode -->
+      <div id="screen-mode">
+        <div class="menu-sub">Choose the mode</div>
+        <div class="menu-cards">
+          <button class="role-card" id="pickTraining">
+            <div class="role-emoji">🎯</div>
+            <div class="role-name">TRAINING</div>
+            <div class="role-desc">Shoot or save, no limits</div>
+          </button>
+          <button class="role-card" id="pickMatch">
+            <div class="role-emoji">🏆</div>
+            <div class="role-name">MATCH</div>
+            <div class="role-desc">Lazio vs Roma · 5 penalties</div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Screen B: choose role (only for training) -->
+      <div id="screen-role" style="display:none">
+        <div class="menu-sub">Choose your role</div>
+        <div class="menu-cards">
+          <button class="role-card" id="pickPlayer">
+            <div class="role-emoji">⚽</div>
+            <div class="role-name">SHOOTER</div>
+            <div class="role-desc">You shoot, CPU saves</div>
+          </button>
+          <button class="role-card" id="pickKeeper">
+            <div class="role-emoji">🧤</div>
+            <div class="role-name">GOALKEEPER</div>
+            <div class="role-desc">You save, CPU shoots</div>
+          </button>
+        </div>
+        <button class="menu-back" id="backToMode">← back</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HUD: punteggio e info, in alto -->
+  <div id="hud">
+    <div class="hud-title">PENALTY<span>KICK</span></div>
+    <div id="scoreboard">
+      <div class="score-item"><span class="lbl">GOAL</span><span id="goals">0</span></div>
+      <div class="score-item"><span class="lbl">SHOTS</span><span id="shots">0</span></div>
+    </div>
+  </div>
+
+  <!-- Pulsante torna al menu (solo allenamento) -->
+  <button id="back-menu" style="display:none">← Menu</button>
+
+  <!-- Center message (GOAL! / SAVE!) -->
+  <div id="flash"></div>
+
+  <!-- Pannello MATCH (Lazio vs Roma) -->
+  <div id="match-panel" style="display:none">
+    <div class="mp-team mp-lazio">LAZIO <span id="mp-lazio">0</span></div>
+    <div class="mp-mid">
+      <div id="mp-round">Penalty 1/5</div>
+      <div id="mp-banner">YOU SHOOT</div>
+    </div>
+    <div class="mp-team mp-roma"><span id="mp-roma">0</span> ROMA</div>
+  </div>
+
+  <!-- Schermata RISULTATO partita -->
+  <div id="result" style="display:none">
+    <div class="result-inner">
+      <div id="result-title">YOU WIN!</div>
+      <div id="result-score">5 - 3</div>
+      <button id="result-again">↻ Back to menu</button>
+    </div>
+  </div>
+
+  <!-- Comandi -->
+  <div id="controls-hint">
+    <span class="key">←</span> left
+    <span class="key">→</span> right
+    <span class="key">↑</span> lob
+    <span class="key">Space</span> center
+  </div>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./libs/three/three.module.js",
+      "three/addons/": "./libs/three/addons/",
+      "@tweenjs/tween.js": "./libs/tween/tween.esm.js"
+    }
+  }
+  </script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
