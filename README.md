@@ -8,7 +8,7 @@ The player always plays as **Lazio** and can either shoot at the opposing goalke
 
 **Play here:** https://sapienzainteractivegraphicscourse.github.io/final-project-shootoutsquad/
 
-## Team — ShootoutSquad
+## Team ShootoutSquad
 
 - Fabiano Cacioli — 2273170
 - Luca Buonomini — 2257472
@@ -16,8 +16,8 @@ The player always plays as **Lazio** and can either shoot at the opposing goalke
 
 ## Game modes
 
-- **Training** — choose to be the shooter (shoot and try to score against the CPU goalkeeper) or the goalkeeper (save the CPU shooter's kicks), with no limit on attempts.
-- **Match** — a full Lazio vs Roma penalty shootout: five alternating kicks per team, score tracking and sudden death in case of a tie, following the real rules of football.
+- **Training** choose to be the shooter (shoot and try to score against the CPU goalkeeper) or the goalkeeper (save the CPU shooter's kicks), with no limit on attempts.
+- **Match** a full Lazio vs Roma penalty shootout: five alternating kicks per team, score tracking and sudden death in case of a tie, following the real rules of football.
 
 ## Controls
 
