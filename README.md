@@ -10,9 +10,9 @@ The player always plays as **Lazio** and can either shoot at the opposing goalke
 
 ## Team ShootoutSquad
 
-- Fabiano Cacioli — 2273170
-- Luca Buonomini — 2257472
-- Fabrizio Pietrobono — 2272808
+- Fabiano Cacioli
+- Luca Buonomini
+- Fabrizio Pietrobono
 
 ## Game modes
 
